@@ -1,0 +1,30 @@
+# OS generated files #
+######################
+.DS_Store*
+Thumbs.db
+
+# Actionscript and eclipse #
+############################
+# Project property files
+.metadata
+.actionScriptProperties
+.flexProperties
+.settings/
+.project
+
+# Build and Release Folders #
+#############################
+bin-debug/
+bin-release/
+release_tmp/
+*.air
+*.zip
+*.zip/
+*.zip Folder/
+
+# Never ignore .gitignore/keep files #
+# Has to be last to override above   #
+# Basically for keeping empty dirs   #
+######################################
+!.gitignore
+!.gitkeep
