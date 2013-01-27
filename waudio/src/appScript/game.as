@@ -7,6 +7,7 @@ import flash.events.MouseEvent;
 import flash.media.SoundTransform;
 import flash.net.URLRequest;
 import flash.ui.Mouse;
+import flash.utils.Timer;
 import flash.utils.getQualifiedClassName;
 import flash.utils.getTimer;
 
@@ -35,12 +36,12 @@ import objects.Person;
 private function get app():waudio{return waudio(FlexGlobals.topLevelApplication);}
 private function get app_name():String{return getQualifiedClassName(app);}
 
-private var seatArray:Array = new Array(108,205,250,207,387,189,184,268,344,256,463,236,284,362,468,342,623,310,428,513,655,472,853,445);
+private var enemyArray:Array = new Array("ally", "ally","ally", "ally","ally", "ally","ally", "ally","ally", "ally","ally", "ally");
 private var randomEnemy:int;
 private var tickPosition:Number;
 private var tickLastPosition:Number;
 private var s:Sound = new Sound(new URLRequest("audio/officeAudio.mp3"));
-private var hoverSound:Sound = new Sound(new URLRequest("audio/ElectronicButton.mp3"));
+private var timer:Timer;
 
 private function init():void {
 	app.addEventListener(StateChangeEvent.CURRENT_STATE_CHANGE, onStateChange);
@@ -49,8 +50,11 @@ private function init():void {
 	s.play(0, 255, new SoundTransform(.6,0));
 	Mouse.hide();
 	
-	randomEnemy = Math.floor(Math.abs(Math.random() * 12));
-
+	timer = new Timer(1000, 30);
+	timer.addEventListener(TimerEvent.TIMER, timerListener);
+	TimerText.text = timer.repeatCount.toString();
+	
+	randomEnemy = Math.floor(Math.abs(Math.random() * 11));
 }
 
 private function creation_complete():void{
@@ -58,113 +62,113 @@ private function creation_complete():void{
 }
 
 private function application_complete():void{
+	enemyArray[randomEnemy] = "enemy";
 
 	var o1:Obstacle = new Obstacle("graphics/cubes4.png");
 	o1.depth = 1;
-	o1.x = 120;
-	o1.y = 200;
+	o1.x = 60;
+	o1.y = 190;
 	o1.scaleX = .8;
 	o1.scaleY = .8;
 	officeObjects.addElement(o1);
 
-	var p1:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p1:Person = new Person("personChair", enemyArray[0]);
 	p1.x = 108;
-	p1.y = 205;
-	p1.scaleX = .4;
-	p1.scaleY = .4;
+	p1.y = 210;
+	p1.scaleX = .23;
+	p1.scaleY = .23;
 	p1.depth = 2;	
 	officeObjects.addElement(p1);
 	
-	var p2:Person = new Person("graphics/personChair.fxg", "enemy", "audio/alienHeart.mp3");
+	var p2:Person = new Person("personChair", enemyArray[1]);
 	p2.x = 250;
 	p2.y = 207;
-	p2.scaleX = .4;
-	p2.scaleY = .4;
+	p2.scaleX = .21;
+	p2.scaleY = .21;
 	p2.depth = 2;	
 	officeObjects.addElement(p2);
 	
-	var p3:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p3:Person = new Person("personChair", enemyArray[2]);
 	p3.x = 387;
-	p3.y = 189;
-	p3.scaleX = .4;
-	p3.scaleY = .4;
+	p3.y = 200;
+	p3.scaleX = .19;
+	p3.scaleY = .19;
 	p3.depth = 2;	
 	officeObjects.addElement(p3);
 	
 	var o2:Obstacle = new Obstacle("graphics/cubes3.png");
-	o2.x = 180;
-	o2.y = 280;
+	o2.x = 110;
+	o2.y = 238;
 	o2.depth = 3;
 	o2.scaleX = .8;
 	o2.scaleY = .8;
 	officeObjects.addElement(o2);
 	
-	var p4:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p4:Person = new Person("personChair", enemyArray[3]);
 	p4.x = 184;
 	p4.y = 268;
-	p4.scaleX = .4;
-	p4.scaleY = .4;
+	p4.scaleX = .26;
+	p4.scaleY = .26;
 	p4.depth = 4;	
 	officeObjects.addElement(p4);
 	
-	var p5:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p5:Person = new Person("personChair", enemyArray[4]);
 	p5.x = 344;
 	p5.y = 256;
-	p5.scaleX = .4;
-	p5.scaleY = .4;
+	p5.scaleX = .25;
+	p5.scaleY = .25;
 	p5.depth = 4;	
 	officeObjects.addElement(p5);
-	//// ALKSJDLKAJSDKJ
 	
-	var p6:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
-	p6.x = 463;
-	p6.y = 236;
-	p6.scaleX = .4;
-	p6.scaleY = .4;
+	var p6:Person = new Person("personChair", enemyArray[5]);
+	p6.x = 473;
+	p6.y = 246;
+	p6.scaleX = .23;
+	p6.scaleY = .23;
 	p6.depth = 4;	
 	officeObjects.addElement(p6);
 	
 	var o3:Obstacle = new Obstacle("graphics/cubes2.png");
-	o3.x = 200;
-	o3.y = 360;
+	o3.x = 160;
+	o3.y = 290;
 	o3.depth = 5;
 	o3.scaleX = .8;
 	o3.scaleY = .8;
 	officeObjects.addElement(o3);
 	
-	var p7:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p7:Person = new Person("personChair", enemyArray[6]);
 	p7.x = 284;
 	p7.y = 362;
-	p7.scaleX = .4;
-	p7.scaleY = .4;
+	p7.scaleX = .31;
+	p7.scaleY = .31;
 	p7.depth = 6;	
 	officeObjects.addElement(p7);
 	
-	var p8:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p8:Person = new Person("personChair", enemyArray[7]);
 	p8.x = 468;
 	p8.y = 342;
-	p8.scaleX = .4;
-	p8.scaleY = .4;
+	p8.scaleX = .29;
+	p8.scaleY = .29;
 	p8.depth = 6;	
 	officeObjects.addElement(p8);
 	
-	var p9:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p9:Person = new Person("personChair", enemyArray[8]);
 	p9.x = 623;
 	p9.y = 310;
-	p9.scaleX = .4;
-	p9.scaleY = .4;
+	p9.scaleX = .27;
+	p9.scaleY = .27;
 	p9.depth = 6;	
 	officeObjects.addElement(p9);
 	
 	var o4:Obstacle = new Obstacle("graphics/cubes1.png");
-	o4.x = 240;
-	o4.y = 480;
+	o4.x = 220;
+	o4.y = 360;
 	o4.depth = 7;
 	o4.scaleX = .8;
 	o4.scaleY = .8;
 	officeObjects.addElement(o4);
 	
-	var p10:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p10:Person = new Person("personChair", enemyArray[9]);
 	p10.x = 428;
 	p10.y = 513;
 	p10.scaleX = .4;
@@ -172,19 +176,19 @@ private function application_complete():void{
 	p10.depth = 8;	
 	officeObjects.addElement(p10);
 	
-	var p11:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p11:Person = new Person("personChair", enemyArray[10]);
 	p11.x = 655;
 	p11.y = 472;
-	p11.scaleX = .4;
-	p11.scaleY = .4;
+	p11.scaleX = .39;
+	p11.scaleY = .39;
 	p11.depth = 8;	
 	officeObjects.addElement(p11);
 	
-	var p12:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p12:Person = new Person("personChair", enemyArray[11]);
 	p12.x = 853;
 	p12.y = 445;
-	p12.scaleX = .4;
-	p12.scaleY = .4;
+	p12.scaleX = .35;
+	p12.scaleY = .35;
 	p12.depth = 8;	
 	officeObjects.addElement(p12);
 	
@@ -234,9 +238,26 @@ private function application_complete():void{
 	}	
 	 * **/
 	
+	timer.start();
+	
+}
+function timerListener (e:TimerEvent):void{
+	if((timer.repeatCount - timer.currentCount) < 10){
+		TimerText.text = "0" + (timer.repeatCount - timer.currentCount).toString();
+	} else{
+		TimerText.text = (timer.repeatCount - timer.currentCount).toString();
+	}
+	
+	if(timer.currentCount == 0){
+		lose();
+	}
 }
 
-private function evalGoodBad(e:PersonEvent):void{
+private function lose():void{
+	
+}
+
+private function quietAudio(e:PersonEvent):void{
 	trace(e.result);
 }
 

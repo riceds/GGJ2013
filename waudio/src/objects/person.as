@@ -29,12 +29,22 @@ package objects
 		private var isHovering:Boolean;
 
 		
-		public function Person(path:String, enemy:String, heartbeat:String)
+		public function Person(path:String, enemy:String)
 		{	
-			person = new personChair();
+			if(path == "personChair"){
+				person = new personChair();
+			} else if(path == "personStandingBlack"){
+				//person = new ;
+			}
+			
 			this.addChild(person);
 			this.enemy = enemy;
-			this.heartbeat = heartbeat;
+			
+			if(enemy == "ally"){
+				this.heartbeat = "audio/heartbeatMono.mp3";
+			} else{
+				this.heartbeat = "audio/heartbeatMono.mp3";
+			}
 			
 			s = new Sound(new URLRequest(this.heartbeat)); 
 			//Math.abs(Math.random()*s.length)
