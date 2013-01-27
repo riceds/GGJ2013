@@ -29,16 +29,7 @@
 	<s:Group id="main_app_group" x="0" y="0">
 		
 		<s:Image id="officeBG" source="graphics/room.png"/>
-		
-		<s:Group id="officePeople" />	
-		
-		<s:Group id="officeObjects" >
-			<s:Image id="cube1" source="graphics/cubes1.png" x="0" y="0" scaleX=".8" scaleY=".8"/>
-			<s:Image id="cube2" source="graphics/cubes2.png" x="0" y="0" scaleX=".8" scaleY=".8"/>
-			<s:Image id="cube3" source="graphics/cubes3.png" x="0" y="0" scaleX=".8" scaleY=".8"/>
-			<s:Image id="cube4" source="graphics/cubes4.png" x="0" y="0" scaleX=".8" scaleY=".8"/>
-		</s:Group>	
-		
+		<s:Group id="officeObjects" />
 		
 		<s:Label id="TitleText"
 				 color="#FFFFFF" fontFamily="Arial" fontSize="30"
