@@ -338,6 +338,12 @@ private function timerListener (e:TimerEvent):void{
 }
 
 private function lose():void{
+	for (var i:int=0;i<officeObjects.numElements;i++){
+		if(Class(getDefinitionByName(getQualifiedClassName(officeObjects.getElementAt(i))))==Person) {
+			TweenLite.killTweensOf(officeObjects.getElementAt(i));
+			Person(officeObjects.getElementAt(i)).stopSound();
+		}
+	}
 	if(officeObjects){officeObjects.removeAllElements();}
 	app.currentState='Lose';
 	SoundMixer.stopAll();
@@ -356,6 +362,7 @@ private function win():void {
 		//app.currentState='Street';
 	//} else {
 		app.currentState='Win';
+		SoundMixer.stopAll();
 	//}
 }
 

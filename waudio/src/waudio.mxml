@@ -45,6 +45,8 @@
 		<s:Image id="loseImage" source="graphics/missionFailed.png" includeIn="Lose" scaleX=".8" scaleY=".8"/>
 		<s:Image id="winImage" source="graphics/missionAccomplished.png" includeIn="Win" scaleX=".8" scaleY=".8"/>
 		
+		<s:Image id="restartBtn" source="graphics/play.png" x="500" y="500" scaleX=".8" scaleY=".8" includeIn="Endings" click.Endings="initOffice(event)"/>
+		
 		
 		<graphics:street10 id="streetBG" includeIn="Street"/>
 		<s:Group id="streetPeople" includeIn="Street"/>
