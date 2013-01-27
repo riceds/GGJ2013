@@ -52,8 +52,7 @@
 		<s:Label id="TimerText"
 				 fontSize="54"
 				 backgroundColor="#000000"
-				 fontWeight="bold"
-				 text=""
+				 fontWeight="bold" color="#800000"
 				 textAlign="center"
 				 x="800"
 				 excludeFrom="Endings">

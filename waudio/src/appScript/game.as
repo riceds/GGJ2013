@@ -332,7 +332,7 @@ private function timerListener (e:TimerEvent):void{
 		TimerText.text = (timer.repeatCount - timer.currentCount).toString();
 	}
 	
-	if(timer.currentCount == 0){
+	if(timer.repeatCount - timer.currentCount == 0){
 		lose();
 	}
 }
