@@ -44,7 +44,8 @@
 			</s:filters>
 		</s:Label>
 		
-		<s:Image id="crosshair" source="graphics/crosshair.png" />
+		<s:Image id="leftPointer" source="graphics/pointer-02.png"/>
+		<s:Image id="rightPointer" source="graphics/pointer-03.png"/>
 		
 	</s:Group>
 	

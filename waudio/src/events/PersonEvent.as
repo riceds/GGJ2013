@@ -4,7 +4,8 @@ package events
 	
 	public class PersonEvent extends Event
 	{
-		public static const CLICK_PERSON:String = "click_person";	
+		public static const CLICK_PERSON:String = "click_person";
+		public static const HOVER_PERSON:String = "hover_person";
 		public var result:String;
 		
 		public function PersonEvent(type:String, result:String)
