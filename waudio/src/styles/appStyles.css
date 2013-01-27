@@ -5,6 +5,9 @@
 @font-face {
 	fontFamily: "Clock";
 	src: URL("fonts/DS-DIGIB.TTF");
+	fontWeight:bold;
+	fontSize:50;
+	fontColor:#FF99BB;
 	embedAsCFF: true;
 }
 

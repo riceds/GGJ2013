@@ -16,6 +16,10 @@ package objects
 	import events.PersonEvent;
 	
 	import graphics.personChair;
+	import graphics.street20;
+	import graphics.street21;
+	import graphics.street22;
+	import graphics.watercoolguy13;
 
 	public class Person extends SpriteVisualElement
 	{
@@ -25,25 +29,41 @@ package objects
 		private var person:personChair;
 		private var s:Sound;
 		private var channel:SoundChannel;
-		private var sTransform:SoundTransform;
+		private var sTransform:SoundTransform = new SoundTransform(.4);
 		private var isHovering:Boolean;
+		private var streetMan1:street20;
+		private var streetMan2:street21;
+		private var streetMan3:street22;
+		private var person2:watercoolguy13;
 
 		
 		public function Person(path:String, enemy:String)
 		{	
 			if(path == "personChair"){
 				person = new personChair();
-			} else if(path == "personStandingBlack"){
-				//person = new ;
-			}
+				this.addChild(person);
+				
+			}  else if(path == "personStandingBlack"){ 
+				person2 = new watercoolguy13(); 
+				this.addChild(person2); 
+				
+			} else if(path == "1"){
+				streetMan1 = new street20();
+				this.addChild(streetMan1);
+			} else if(path == "2"){
+				streetMan2 = new street21();
+				this.addChild(streetMan2);
+			} else if(path == "3"){
+				streetMan3 = new street22();
+				this.addChild(streetMan3);
+			} 
 			
-			this.addChild(person);
 			this.enemy = enemy;
 			
 			if(enemy == "ally"){
 				this.heartbeat = "audio/heartbeatMono.mp3";
 			} else{
-				this.heartbeat = "audio/heartbeatMono.mp3";
+				this.heartbeat = "audio/alienHeart.mp3";
 			}
 			
 			s = new Sound(new URLRequest(this.heartbeat)); 
@@ -77,6 +97,10 @@ package objects
 			TweenLite.to(channel, .5, {volume:.4});
 			TweenLite.to(SoundMixer, .5, {volume:1});
 			isHovering=false;
+		}
+		
+		public function stopSound():void {
+			channel.stop();
 		}
 		
 		/**

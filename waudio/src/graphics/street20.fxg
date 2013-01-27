@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="1.0" viewHeight="812.188" viewWidth="336.332" ai:appVersion="14.0.0.367" d:id="1" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+  <Library/>
+  <Group x="-3349.14" y="-7200.48" d:id="3" d:type="layer" d:userLabel="Layer 2">
+    <Group x="3361.93" y="7218.83">
+      <Path winding="nonZero" ai:knockout="0" data="M275.411 730.436C269.614 730.436 261.501 732.753 261.501 732.753 261.501 732.753 249.913 701.462 249.913 662.059 249.913 622.656 240.263 591.367 240.263 536.898 240.263 488.49 247.364 456.966 242.356 413.437 242.14 408.146 242.009 402.894
+ 242.009 397.83 242.009 364.221 231.579 320.184 246.644 244.854 246.644 244.854 257.073 307.436 258.231 321.342 259.392 335.249 261.708 388.559 261.708 388.559 261.708 388.559 268.669 396.671 277.935 396.671 277.935 396.671 279.093 402.465 277.935
+ 415.213 276.774 427.96 269.821 437.231 270.979 440.709 272.14 444.187 284.888 438.391 289.522 425.644 294.159 412.896 294.159 395.512 294.159 395.512L310.384 390.876C310.384 390.876 309.224 366.54 302.272 313.231 295.317 259.92 288.362 207.539
+ 281.409 187.374 274.458 167.208 276.774 150.983 267.505 146.347 263.05 144.121 254.583 139.756 244.421 135.048 244.454 134.954 244.491 134.851 244.522 134.759 244.522 134.759 228.624 123.458 202.804 120.853 176.059 118.152 125.156 113.899 101.979
+ 120.853 78.8008 127.805 52.1445 141.712 42.874 146.347 33.6025 150.983 35.9229 167.208 28.9688 187.374 22.0156 207.539 15.0596 259.92 8.1084 313.231 1.1543 366.54 -0.00390625 390.876 -0.00390625 390.876L16.2197 395.512C16.2197 395.512 16.2197
+ 412.896 20.8555 425.644 25.4922 438.391 38.2393 444.187 39.3975 440.709 40.5557 437.231 33.6025 427.96 32.4443 415.213 31.2861 402.465 32.4443 396.671 32.4443 396.671 41.71 396.671 48.6699 388.559 48.6699 388.559 48.6699 388.559 50.9863 335.249
+ 52.1445 321.342 53.3047 307.436 63.7354 244.854 63.7354 244.854 78.8008 320.184 68.3701 364.221 68.3701 397.83 68.3701 431.438 67.2168 473.159 69.5332 481.271 71.8516 489.383 65.6748 516.037 66.833 528.785 67.9912 541.533 67.6094 548.487 59.4951
+ 587.89 51.3828 627.292 52.543 694.51 54.8623 709.574 57.1787 724.641 58.3369 730.436 51.3828 737.388 44.4316 744.343 54.8623 759.408 59.4951 761.726 64.1318 764.044 65.29 779.108 88.4678 773.314 102.006 769.929 98.9004 754.772 98.9004 750.138
+ 98.9004 745.502 123.236 671.331 124.395 646.994 124.834 637.733 128.26 587.89 130.578 569.348 132.895 550.807 154.899 445.345 154.899 445.345 154.899 445.345 164.154 538.058 175.743 600.638 187.334 663.218 209.351 780.269 209.351 780.269 209.351
+ 780.269 219.782 783.744 237.165 780.269 254.548 776.792 254.548 765.202 258.026 766.36 261.501 767.521 282.362 765.202 290.476 751.296 298.589 737.388 281.204 730.436 275.411 730.436Z" >
+        <fill>
+          <SolidColor/>
+        </fill>
+      </Path>
+      <Group x="110.931">
+        <Path winding="nonZero" ai:knockout="0" data="M88.5234 54.4814C88.5234 87.8008 68.7051 114.81 44.2578 114.81 19.8115 114.81 -0.00390625 87.8008 -0.00390625 54.4814 -0.00390625 21.165 19.8115 0.000976562 44.2578 0.000976562 68.7051 0.000976562 88.5234 21.165 88.5234 54.4814Z" >
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+        <Path winding="nonZero" ai:knockout="0" data="M13.5039 96.2217C13.5039 96.2217 26.1445 115.324 17.0322 135.029 7.91797 154.735 81.582 143.184 81.582 143.184 81.582 143.184 71.0127 112.647 78.5742 89.5186" >
+          <fill>
+            <SolidColor/>
+          </fill>
+        </Path>
+      </Group>
+    </Group>
+  </Group>
+  <Group x="-8420.34" y="-826.304" d:id="5" d:type="layer" d:userLabel="city shops outlines"/>
+  <Private>
+    <ai:PrivateElement d:ref="#1">
+      <ai:DocData base="street-20.assets/images"/>
+      <ai:AutoGenImageList>
+        <ai:Dictionary>
+          <ai:DictEntry name="4" value="ai135927789633.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="2" value="ai135927788131.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="0" value="ai135927786229.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="3" value="ai135927788732.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="1" value="ai135927786230.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="5" value="ai135927789834.png" valueType="UnicodeString"/>
+        </ai:Dictionary>
+      </ai:AutoGenImageList>
+      <ai:SaveOptions>
+        <ai:Dictionary>
+          <ai:DictEntry name="includeXMP" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="aiEditCap" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="versionKey" value="1" valueType="Integer"/>
+          <ai:DictEntry name="preserveTextPolicy" value="3" valueType="Integer"/>
+          <ai:DictEntry name="preserveGradientPolicy" value="3" valueType="Integer"/>
+          <ai:DictEntry name="downsampleLinkedImages" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="includeSymbol" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="clipToActiveArtboard" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="rasterizeResolution" value="72" valueType="Integer"/>
+          <ai:DictEntry name="writeImages" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="preserveFilterPolicy" value="3" valueType="Integer"/>
+        </ai:Dictionary>
+      </ai:SaveOptions>
+      <ai:Artboards rulerCanvasDiffH="640.5" rulerCanvasDiffV="-511.5">
+        <ai:Artboard bottom="-3563.084" index="19" left="1829" right="2165.332" top="-2750.896"/>
+      </ai:Artboards>
+    </ai:PrivateElement>
+    <ai:PrivateElement d:ref="#3">
+      <ai:LayerOptions colorType="ThreeColor">
+        <ai:ThreeColor blue="79.31" green="79.31" red="257"/>
+      </ai:LayerOptions>
+    </ai:PrivateElement>
+    <ai:PrivateElement d:ref="#5">
+      <ai:LayerOptions colorType="ThreeColor">
+        <ai:ThreeColor blue="79.31" green="257" red="257"/>
+      </ai:LayerOptions>
+    </ai:PrivateElement>
+  </Private>
+</Graphic>

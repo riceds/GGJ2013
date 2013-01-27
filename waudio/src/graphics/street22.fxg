@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Graphic version="1.0" viewHeight="812.187" viewWidth="336.332" ai:appVersion="14.0.0.367" d:id="1" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ai="http://ns.adobe.com/ai/2008" xmlns:d="http://ns.adobe.com/fxg/2008/dt">
+  <Library/>
+  <Group x="-4105.14" y="-7200.48" d:id="3" d:type="layer" d:userLabel="Layer 2">
+    <Group x="4117.92" y="7218.83" ai:knockout="0">
+      <Path winding="nonZero" ai:knockout="0" data="M275.416 730.435C269.619 730.435 261.506 732.752 261.506 732.752 261.506 732.752 249.918 701.461 249.918 662.058 249.918 622.655 240.268 591.366 240.268 536.897 240.268 488.489 247.369 456.965 242.361 413.436 242.145 408.146 242.014 402.893
+ 242.014 397.829 242.014 364.22 231.584 320.183 246.648 244.854 246.648 244.854 257.078 307.435 258.236 321.341 259.396 335.248 261.713 388.558 261.713 388.558 261.713 388.558 268.674 396.67 277.939 396.67 277.939 396.67 279.098 402.464 277.939
+ 415.212 276.779 427.959 269.826 437.23 270.984 440.708 272.145 444.186 284.893 438.39 289.527 425.643 294.164 412.895 294.164 395.511 294.164 395.511L310.389 390.875C310.389 390.875 309.229 366.539 302.277 313.23 295.322 259.919 288.367 207.538
+ 281.414 187.373 274.463 167.207 276.779 150.982 267.51 146.346 263.055 144.12 254.588 139.755 244.426 135.047 244.459 134.953 244.496 134.85 244.527 134.758 244.527 134.758 228.629 123.457 202.809 120.852 176.062 118.151 125.16 113.898 101.982
+ 120.852 78.8047 127.804 52.1484 141.711 42.8789 146.346 33.6074 150.982 35.9277 167.207 28.9727 187.373 22.0195 207.538 15.0645 259.919 8.11328 313.23 1.1582 366.539 0 390.875 0 390.875L16.2246 395.511C16.2246 395.511 16.2246 412.895 20.8594
+ 425.643 25.4961 438.39 38.2441 444.186 39.4023 440.708 40.5605 437.23 33.6074 427.959 32.4492 415.212 31.291 402.464 32.4492 396.67 32.4492 396.67 41.7148 396.67 48.6738 388.558 48.6738 388.558 48.6738 388.558 50.9902 335.248 52.1484 321.341
+ 53.3086 307.435 63.7402 244.854 63.7402 244.854 78.8047 320.183 68.375 364.22 68.375 397.829 68.375 431.438 67.2207 473.158 69.5371 481.27 71.8555 489.382 65.6797 516.036 66.8379 528.784 67.9961 541.532 67.6133 548.486 59.5 587.889 51.3867 627.291
+ 52.5469 694.509 54.8672 709.573 57.1836 724.64 58.3418 730.435 51.3867 737.387 44.4355 744.342 54.8672 759.407 59.5 761.725 64.1367 764.043 65.2949 779.107 88.4727 773.313 102.01 769.928 98.9043 754.771 98.9043 750.137 98.9043 745.501 123.24
+ 671.33 124.398 646.993 124.838 637.732 128.264 587.889 130.582 569.347 132.898 550.806 154.904 445.344 154.904 445.344 154.904 445.344 164.158 538.057 175.748 600.637 187.338 663.217 209.355 780.268 209.355 780.268 209.355 780.268 219.787 783.743
+ 237.17 780.268 254.553 776.791 254.553 765.201 258.031 766.359 261.506 767.52 282.367 765.201 290.48 751.295 298.594 737.387 281.209 730.435 275.416 730.435Z" >
+        <fill>
+          <SolidColor color="#bfbfbf"/>
+        </fill>
+      </Path>
+      <Group x="110.932">
+        <Path winding="nonZero" ai:knockout="0" data="M88.5273 54.4805C88.5273 87.7998 68.709 114.809 44.2617 114.809 19.8145 114.809 0 87.7998 0 54.4805 0 21.1641 19.8145 0 44.2617 0 68.709 0 88.5273 21.1641 88.5273 54.4805Z" >
+          <fill>
+            <SolidColor color="#bfbfbf"/>
+          </fill>
+        </Path>
+        <Path winding="nonZero" ai:knockout="0" data="M13.5078 96.2207C13.5078 96.2207 26.1484 115.323 17.0352 135.028 7.92188 154.734 81.5859 143.183 81.5859 143.183 81.5859 143.183 71.0156 112.646 78.5781 89.5176" >
+          <fill>
+            <SolidColor color="#bfbfbf"/>
+          </fill>
+        </Path>
+      </Group>
+    </Group>
+  </Group>
+  <Group x="-9176.34" y="-826.304" d:id="4" d:type="layer" d:userLabel="city shops outlines"/>
+  <Group x="-154.016" y="611.312" visible="false" d:id="9" d:type="layer" d:userLabel="Layer 4">
+    <Line xFrom="454.335" yFrom="45.3457" xTo="454.335" yTo="1083.67" ai:knockout="0">
+      <stroke>
+        <SolidColorStroke color="#ec194e" caps="none" weight="0.326489" joints="miter" miterLimit="4"/>
+      </stroke>
+    </Line>
+    <Line xFrom="467.056" yFrom="45.3477" xTo="467.056" yTo="1083.67" ai:knockout="0">
+      <stroke>
+        <SolidColorStroke color="#ec194e" caps="none" weight="0.326489" joints="miter" miterLimit="4"/>
+      </stroke>
+    </Line>
+    <Line xFrom="388.799" yFrom="563.953" xTo="1790.02" yTo="153.791" ai:knockout="0">
+      <stroke>
+        <SolidColorStroke color="#ec194e" caps="none" weight="0.447422" joints="miter" miterLimit="4"/>
+      </stroke>
+    </Line>
+    <Line xFrom="388.799" yFrom="563.953" xTo="1997.92" yTo="159.18" ai:knockout="0">
+      <stroke>
+        <SolidColorStroke color="#ec194e" caps="none" weight="0.447422" joints="miter" miterLimit="4"/>
+      </stroke>
+    </Line>
+  </Group>
+  <Private>
+    <ai:PrivateElement d:ref="#1">
+      <ai:DocData base="street-22.assets/images"/>
+      <ai:AutoGenImageList>
+        <ai:Dictionary>
+          <ai:DictEntry name="4" value="ai135927923947.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="2" value="ai135927922745.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="0" value="ai135927921443.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="3" value="ai135927923146.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="1" value="ai135927921544.png" valueType="UnicodeString"/>
+          <ai:DictEntry name="5" value="ai135927924048.png" valueType="UnicodeString"/>
+        </ai:Dictionary>
+      </ai:AutoGenImageList>
+      <ai:SaveOptions>
+        <ai:Dictionary>
+          <ai:DictEntry name="includeXMP" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="aiEditCap" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="versionKey" value="1" valueType="Integer"/>
+          <ai:DictEntry name="preserveTextPolicy" value="3" valueType="Integer"/>
+          <ai:DictEntry name="preserveGradientPolicy" value="3" valueType="Integer"/>
+          <ai:DictEntry name="downsampleLinkedImages" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="includeSymbol" value="0" valueType="Boolean"/>
+          <ai:DictEntry name="clipToActiveArtboard" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="rasterizeResolution" value="72" valueType="Integer"/>
+          <ai:DictEntry name="writeImages" value="1" valueType="Boolean"/>
+          <ai:DictEntry name="preserveFilterPolicy" value="3" valueType="Integer"/>
+        </ai:Dictionary>
+      </ai:SaveOptions>
+      <ai:Artboards rulerCanvasDiffH="640.5" rulerCanvasDiffV="-511.5">
+        <ai:Artboard active="1" bottom="-3563.084" index="21" left="2585" right="2921.332" top="-2750.896"/>
+      </ai:Artboards>
+    </ai:PrivateElement>
+    <ai:PrivateElement d:ref="#3">
+      <ai:LayerOptions colorType="ThreeColor">
+        <ai:ThreeColor blue="79.31" green="79.31" red="257"/>
+      </ai:LayerOptions>
+    </ai:PrivateElement>
+    <ai:PrivateElement d:ref="#4">
+      <ai:LayerOptions colorType="ThreeColor">
+        <ai:ThreeColor blue="79.31" green="257" red="257"/>
+      </ai:LayerOptions>
+    </ai:PrivateElement>
+    <ai:PrivateElement d:ref="#9">
+      <ai:LayerOptions colorType="ThreeColor" visible="0">
+        <ai:ThreeColor blue="257" green="79.31" red="79.31"/>
+      </ai:LayerOptions>
+    </ai:PrivateElement>
+  </Private>
+</Graphic>

@@ -6,7 +6,7 @@
 					   width="1024" height="768"
 					   initialize="init();"
 					   creationComplete="creation_complete();"
-					   applicationComplete="application_complete();"
+					   applicationComplete="application_complete();" xmlns:graphics="graphics.*"
 					   >
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
@@ -17,27 +17,46 @@
 	<fx:Script>
 		<![CDATA[
 			include "appScript/game.as";
+			
 		]]>
 	</fx:Script>
 	
 	<!-- STATES -->
 	<s:states>
+		
+		<s:State name="Start"/>
 		<s:State name="Office" stateGroups="Levels"/>
-		<s:State name="Lose"/>
+		<s:State name="Street" stateGroups="Levels" enterState="initStreet();"/>
+		<s:State name="Lose" stateGroups="Endings"/>
+		<s:State name="Win" stateGroups="Endings"/>
 	</s:states>
 	
 	<!-- Main app outer container -->
 	<s:Group id="main_app_group" x="0" y="0">
 		
-		<s:Image id="officeBG" source="graphics/room.png"/>
-		<s:Group id="officeObjects"/>
+		<s:Group id="startGroup" includeIn="Start">
+			<s:Image id="startBG" source="graphics/startBG.png" x="0" y="0" scaleX=".8" scaleY=".8"/>
+			<s:Image id="startBtn" source="graphics/play.png" x="500" y="500" scaleX=".8" scaleY=".8" click="initOffice(event)"/>
+		</s:Group>
+		
+		<s:Image id="officeBG" source="graphics/officeBackground.png" includeIn="Office"/>
+		<s:Group id="officeObjects" includeIn="Office"/>
+		
+		<s:Image id="loseImage" source="graphics/missionFailed.png" includeIn="Lose" scaleX=".8" scaleY=".8"/>
+		<s:Image id="winImage" source="graphics/missionAccomplished.png" includeIn="Win" scaleX=".8" scaleY=".8"/>
+		
+		
+		<graphics:street10 id="streetBG" includeIn="Street"/>
+		<s:Group id="streetPeople" includeIn="Street"/>
 		
 		<s:Label id="TimerText"
-				 fontSize="30"
+				 fontSize="54"
 				 backgroundColor="#000000"
 				 fontWeight="bold"
 				 text=""
-				 textAlign="center">
+				 textAlign="center"
+				 x="800"
+				 excludeFrom="Endings">
 			<s:filters>
 				<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="#000000"
 									distance="4.0" hideObject="false" inner="false" knockout="false"
@@ -45,8 +64,8 @@
 			</s:filters>
 		</s:Label>
 		
-		<s:Image id="leftPointer" source="graphics/pointer-02.png"/>
-		<s:Image id="rightPointer" source="graphics/pointer-03.png"/>
+		<s:Image id="leftPointer" source="graphics/pointer-02.png" />
+		<s:Image id="rightPointer" source="graphics/pointer-03.png" />
 		
 	</s:Group>
 	
