@@ -23,6 +23,7 @@
 	<!-- STATES -->
 	<s:states>
 		<s:State name="Office" stateGroups="Levels"/>
+		<s:State name="Lose"/>
 	</s:states>
 	
 	<!-- Main app outer container -->
@@ -31,11 +32,11 @@
 		<s:Image id="officeBG" source="graphics/room.png"/>
 		<s:Group id="officeObjects" />
 		
-		<s:Label id="TitleText"
-				 color="#FFFFFF" fontFamily="Arial" fontSize="30"
+		<s:Label id="TimerText"
+				 fontSize="30"
 				 backgroundColor="#000000"
 				 fontWeight="bold"
-				 text="Waudio Alpha"
+				 text=""
 				 textAlign="center">
 			<s:filters>
 				<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="#000000"

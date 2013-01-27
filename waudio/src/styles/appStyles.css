@@ -2,11 +2,17 @@
 @namespace s "library://ns.adobe.com/flex/spark";
 @namespace mx "library://ns.adobe.com/flex/mx";
 
+@font-face {
+	fontFamily: "Clock";
+	src: URL("fonts/DS-DIGIB.TTF");
+	embedAsCFF: true;
+}
+
 s|Label
 {
 	color: #FFA81F;
-	fontFamily: Arial;
+	fontFamily: Clock;
 	fontSize: 25;
-	fontWeight: normal;
+	fontWeight: bold;
 	lineBreak:toFit;
 }
