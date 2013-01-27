@@ -39,14 +39,14 @@ private var seatArray:Array = new Array(108,205,250,207,387,189,184,268,344,256,
 private var randomEnemy:int;
 private var tickPosition:Number;
 private var tickLastPosition:Number;
-private var s:Sound = new Sound(new URLRequest("audio/jazzStreet.mp3"));
-
+private var s:Sound = new Sound(new URLRequest("audio/officeAudio.mp3"));
+private var hoverSound:Sound = new Sound(new URLRequest("audio/ElectronicButton.mp3"));
 
 private function init():void {
 	app.addEventListener(StateChangeEvent.CURRENT_STATE_CHANGE, onStateChange);
 	app.addEventListener(Event.ENTER_FRAME, trackMouse);
-	this.addEventListener(PersonEvent.HOVER_PERSON, quietAudio);
-	s.play(0, 255, new SoundTransform(.5,0));
+	app.addEventListener(PersonEvent.CLICK_PERSON, evalGoodBad);
+	s.play(0, 255, new SoundTransform(.6,0));
 	Mouse.hide();
 	
 	randomEnemy = Math.floor(Math.abs(Math.random() * 12));
@@ -75,7 +75,7 @@ private function application_complete():void{
 	p1.depth = 2;	
 	officeObjects.addElement(p1);
 	
-	var p2:Person = new Person("graphics/personChair.fxg", "ally", "audio/heartbeatTest.mp3");
+	var p2:Person = new Person("graphics/personChair.fxg", "enemy", "audio/alienHeart.mp3");
 	p2.x = 250;
 	p2.y = 207;
 	p2.scaleX = .4;
@@ -236,13 +236,7 @@ private function application_complete():void{
 	
 }
 
-private function test():void{
-	for(var i:Number=0; i<officeObjects.numElements; i++){
-		trace(officeObjects.getElementAt(i).depth);
-	}
-}
-
-private function quietAudio(e:PersonEvent):void{
+private function evalGoodBad(e:PersonEvent):void{
 	trace(e.result);
 }
 

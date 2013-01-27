@@ -10,7 +10,7 @@ package events
 		
 		public function PersonEvent(type:String, result:String)
 		{
-			super(type);
+			super(type,true);
 			this.result = result;
 		}
 		

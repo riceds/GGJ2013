@@ -29,9 +29,9 @@
 	<s:Group id="main_app_group" x="0" y="0">
 		
 		<s:Image id="officeBG" source="graphics/room.png"/>
-		<s:Group id="officeObjects" />
+		<s:Group id="officeObjects"/>
 		
-		<s:Label id="TitleText"
+		<s:Label id="TimerText"
 				 color="#FFFFFF" fontFamily="Arial" fontSize="30"
 				 backgroundColor="#000000"
 				 fontWeight="bold"

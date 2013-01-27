@@ -46,6 +46,7 @@ package objects
 		}
 		
 		private function personClicked(event:MouseEvent):void{
+			trace("clicked");
 			dispatchEvent(new PersonEvent(PersonEvent.CLICK_PERSON, enemy));
 		}
 		
@@ -82,14 +83,12 @@ package objects
 				
 			} else {
 				if(dist>300){
-					vol = 0;
+					TweenLite.to(channel, 1, {volume:0});
 				} else {
-					vol = map(dist,300,0,0,.7);
+					vol = map(dist,300,0,0,.5);
+					pan = map(xOffset,1280-this.x,this.x-1280,-1,1);
+					channel.soundTransform = new SoundTransform(vol,pan);
 				}
-				
-				pan = map(xOffset,1280-this.x,this.x-1280,-1,1);
-	
-				channel.soundTransform = new SoundTransform(vol,pan);
 			}
 		}
 		
