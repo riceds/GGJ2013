@@ -35,6 +35,9 @@ package objects
 		private var streetMan2:street21;
 		private var streetMan3:street22;
 		private var person2:watercoolguy13;
+		
+		private var personOverSound:Sound = new Sound(new URLRequest("audio/mOver.mp3"));
+		private var personOutSound:Sound = new Sound(new URLRequest("audio/mOut.mp3"));
 
 		
 		public function Person(path:String, enemy:String)
@@ -63,7 +66,7 @@ package objects
 			if(enemy == "ally"){
 				this.heartbeat = "audio/heartbeatMono.mp3";
 			} else{
-				this.heartbeat = "audio/alienHeart.mp3";
+				this.heartbeat = "audio/alienHeart2.mp3";
 			}
 			
 			s = new Sound(new URLRequest(this.heartbeat)); 
@@ -71,8 +74,8 @@ package objects
 			channel = s.play(Math.random()*800, 20, sTransform);
 			
 			this.addEventListener(MouseEvent.CLICK, personClicked);
-			this.addEventListener(MouseEvent.MOUSE_OVER, personOver);
-			this.addEventListener(MouseEvent.MOUSE_OUT, personOut);
+			this.addEventListener(MouseEvent.ROLL_OVER, personOver);
+			this.addEventListener(MouseEvent.ROLL_OUT, personOut);
 		}
 		
 		private function personClicked(event:MouseEvent):void{
@@ -84,19 +87,19 @@ package objects
 			trace("person over " );
 			dispatchEvent(new PersonEvent(PersonEvent.HOVER_PERSON, enemy));
 			this.filters = [new GlowFilter(0xFFFFFF,1,2,2,2,1,true)];
-			TweenLite.to(channel, 2, {volume:3});
-			TweenLite.to(SoundMixer, 2, {volume:.3});
+			TweenLite.to(channel, 1, {volume:3});
+			TweenLite.to(SoundMixer, 1, {volume:.2});
 			isHovering=true;
-			//SoundMixer.soundTransform = new SoundTransform(.3,0);
-			//channel.soundTransform = new SoundTransform(3,0);
+			personOverSound.play();
 		}
 		
 		private function personOut(event:MouseEvent):void {
 			trace("person out" );
 			this.filters = null;
-			TweenLite.to(channel, .5, {volume:.4});
-			TweenLite.to(SoundMixer, .5, {volume:1});
+			TweenLite.to(channel, 1, {volume:.4});
+			TweenLite.to(SoundMixer, 1, {volume:1});
 			isHovering=false;
+			personOutSound.play();
 		}
 		
 		public function stopSound():void {
@@ -116,11 +119,13 @@ package objects
 			if(isHovering){
 				
 			} else {
-				if(dist>300){
+				if(dist>300 && this.enemy !="enemy"){
+					TweenLite.to(channel, 1, {volume:0});
+				} else  if (dist>600) {
 					TweenLite.to(channel, 1, {volume:0});
 				} else {
-					vol = map(dist,300,0,0,.5);
-					pan = map(xOffset,1280-this.x,this.x-1280,-1,1);
+					vol = map(dist,300,0,0,.4);
+					pan=  xOffset < 0 ? .9 : -.9;
 					channel.soundTransform = new SoundTransform(vol,pan);
 				}
 			}

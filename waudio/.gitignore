@@ -17,7 +17,6 @@ Thumbs.db
 bin-debug/
 bin-release/
 release_tmp/
-*.air
 *.zip
 *.zip/
 *.zip Folder/

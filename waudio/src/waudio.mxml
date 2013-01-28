@@ -6,7 +6,7 @@
 					   width="1024" height="768"
 					   initialize="init();"
 					   creationComplete="creation_complete();"
-					   applicationComplete="application_complete();" xmlns:graphics="graphics.*"
+					   applicationComplete="application_complete();" xmlns:graphics="graphics.*" xmlns:levelComponents="levelComponents.*"
 					   >
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
@@ -25,7 +25,7 @@
 	<s:states>
 		
 		<s:State name="Start"/>
-		<s:State name="Office" stateGroups="Levels"/>
+		<s:State name="Office" stateGroups="Levels" exitState="clearLevel('office');"/>
 		<s:State name="Street" stateGroups="Levels" enterState="initStreet();"/>
 		<s:State name="Lose" stateGroups="Endings"/>
 		<s:State name="Win" stateGroups="Endings"/>
@@ -39,8 +39,10 @@
 			<s:Image id="startBtn" source="graphics/play.png" x="500" y="500" scaleX=".8" scaleY=".8" click="initOffice(event)"/>
 		</s:Group>
 		
-		<s:Image id="officeBG" source="graphics/officeBackground.png" includeIn="Office"/>
-		<s:Group id="officeObjects" includeIn="Office"/>
+		<!--s:Image id="officeBG" source="graphics/officeBackground.png" includeIn="Office"/>
+		<s:Group id="officeObjects" includeIn="Office"/-->
+		
+		<levelComponents:Office id="officeLevel" includeIn="Office"/>
 		
 		<s:Image id="loseImage" source="graphics/missionFailed.png" includeIn="Lose" scaleX=".8" scaleY=".8"/>
 		<s:Image id="winImage" source="graphics/missionAccomplished.png" includeIn="Win" scaleX=".8" scaleY=".8"/>
